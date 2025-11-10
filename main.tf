@@ -26,6 +26,6 @@ resource_group_name=azm-resource-group.rg.name
 virtual_network_name=azurerm_virtual_network.vnet.name
 address_prefixes =var.subnet_prefixes
 }
-}
+
 
 
