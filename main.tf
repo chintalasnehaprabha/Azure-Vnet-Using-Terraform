@@ -14,10 +14,10 @@ resource "azurerm_resource_group" "rg"{
 name= var.resource_group_name
 location= var.location
 }
-resource "azurerm_virtual_network" "aznet"{
+resource "azurerm_virtual_network" "azurerm_virtual_network"{
 name=var.azm_vnet_name
-resource_group=var.azurerm_resource_group.rg.name
-resource_group_location= var.azurerm_resource_group.location
+resource_group_name = var.azurerm_resource_group.rg.name
+resource_group_location = var.azurerm_resource_group.rg.location
 address_space= var.address_space
 }
 resource "azurerm_subnets" "azsub"{
